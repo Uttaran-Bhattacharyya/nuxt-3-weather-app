@@ -39,7 +39,7 @@ const clouds = computed(() => {
 
 async function onSubmit() {
   const { pending, data } = await useFetch<any>(
-    `http://api.openweathermap.org/geo/1.0/direct?q=${city.value}&limit=1&appid=f845ac34e5db4828607d1c9d4e1ada8c`,
+    `https://api.openweathermap.org/geo/1.0/direct?q=${city.value}&limit=1&appid=f845ac34e5db4828607d1c9d4e1ada8c`,
   );
 
   geoData.value = data.value;
